@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="bienvenida" class="pantalla-activa">
+        <div class="bienvenida-content">
+            <h1>Bienvenido a Nuestra Tienda</h1>
+            <p>Descubre ofertas especiales y productos exclusivos</p>
+            <button onclick="mostrarFormulario()" class="btn-1">Entrar</button>
+        </div>
+    </section>
+    <!-- FORMULARIO DE ACCESO -->
+     <section id="formulario-acceso" class="pantalla-oculta">
+        <div class="formulario-box">
+            <h2>Acceso</h2>
+            <form onsubmit="accederPagina(event)">
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <button type="submit" class="btn-1">Ingresar</button>
+            </form>
+        </div>
+    </section>
+    <!-- CONTENIDO PRINCIPAL -->
+     <div id="pagina-principal" class="pantalla-oculta">
+        <header class="header">
+            <div class="menu container">
+                <a href="#" class="logo">Logo</a>
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <img src="images/menu.png" alt="menu">
+                </label>
+                    <nav class="navbar">
+                        <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="images/car.svg" id="img-carrito" alt="">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Ofertas Especiales</h1>
+                <p>Estrena los mejores productos</p>
+                <a href="#" class="btn-1">Informacion</a>
+            </div>
+            <div class="header-img">
+                <img src="images/right.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <section class="oferts container" id="lista-1">
+        <h2>Sofas y Sillas</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        
+        <div class="oferts-content">
+            <div class="ofert-1">
+                <img src="images/pr1.png" alt="">
+                <div class="product-txt">
+                <h3>lorem</h3>
+                <p>calidad premium</p>
+                <p class="Precio">$200</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar</a>
+                </div>
+            </div>
+            
+            <div class="ofert-1">
+                <img src="images/pr2.png" alt="">
+                <div class="product-txt">
+                <h3>lorem</h3>
+                <p>calidad premium</p>
+                <p class="Precio">$200</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="2">Agregar</a>
+                </div>
+            </div>
+
+            <div class="logan-1">
+                <h3>Sillas</h3>
+                <p>Productos</p>
+                <a href="#" class="btn-2">Informacion</a>
+            </div>
+
+        </div>
+
+        <div class="oferts-content">
+
+            <div class="logan-1">
+                <h3>Sillas</h3>
+                <p>Productos</p>
+                <a href="#" class="btn-2">Informacion</a>
+            </div>
+
+            <div class="ofert-1">
+                <img src="images/pr3.png" alt="">
+                <div class="product-txt">
+                <h3>lorem</h3>
+                <p>calidad premium</p>
+                <p class="Precio">$200</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="3">Agregar</a>
+                </div>
+            </div>
+            
+            <div class="ofert-1">
+                <img src="images/pr4.png" alt="">
+                <div class="product-txt">
+                <h3>lorem</h3>
+                <p>calidad premium</p>
+                <p class="Precio">$200</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="4">Agregar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="promotion">
+        <div class="promotion-content container">
+            <div class="promotion-txt">
+                <h2>La Mejores Promociones</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus magni tenetur nemo omnis voluptatum optio ipsam libero necessitatibus dolorum? Ex ipsum placeat impedit ratione, corporis consequatur quo natus eligendi!</p>
+                <a href="#" class="btn-1">Informacion</a>
+            </div>
+
+            <div class="promotion-img">
+                <img src="images/r1.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <main class="product container" id="lista-2">
+        <h2>Productos</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>    
+        <div class="product-content">
+            <div class="ofert-1">
+                <img src="images/1.png" alt="">
+                <div class="product-txt">
+                    <h3>lorem</h3>
+                    <p>calidad</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="5">Agregar</a>
+                </div>
+            </div>
+
+            <div class="ofert-1">
+                <img src="images/2.png" alt="">
+                <div class="product-txt">
+                    <h3>lorem</h3>
+                    <p>calidad</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="6">Agregar</a>
+                </div>
+            </div>
+
+            <div class="ofert-1">
+                <img src="images/3.png" alt="">
+                <div class="product-txt">
+                    <h3>lorem</h3>
+                    <p>calidad</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar</a>
+                </div>
+            </div>
+
+            <div class="ofert-1">
+                <img src="images/4.png" alt="">
+                <div class="product-txt">
+                    <h3>lorem</h3>
+                    <p>calidad</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar</a>
+                </div>
+            </div>
+
+            <div class="ofert-1">
+                <img src="images/5.png" alt="">
+                <div class="product-txt">
+                    <h3>lorem</h3>
+                    <p>calidad</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="9">Agregar</a>
+                </div>
+            </div>
+
+            <div class="ofert-1">
+                <img src="images/6.png" alt="">
+                <div class="product-txt">
+                    <h3>lorem</h3>
+                    <p>calidad</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="10">Agregar</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <section class="blog-container">
+        <h2>Lorem</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+
+        <div class="blog-content">
+            <div class="blog-1">
+                <img src="images/b1.jpg" alt="">
+                <div class="blog-txt">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio doloribus rerum, a amet iusto ipsum quidem eum quos corrupti totam voluptatibus ducimus vel soluta illo nam dolore exercitationem omnis quisquam?</p>
+                    <a href="#" class="btn-4">Leer mas</a>                
+                </div>
+            </div>
+
+             <div class="blog-1">
+                <img src="images/b2.jpg" alt="">
+                <div class="blog-txt">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio doloribus rerum, a amet iusto ipsum quidem eum quos corrupti totam voluptatibus ducimus vel soluta illo nam dolore exercitationem omnis quisquam?</p>
+                    <a href="#" class="btn-4">Leer mas</a>                
+                </div>
+            </div>
+
+             <div class="blog-1">
+                <img src="images/b3.jpg" alt="">
+                <div class="blog-txt">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio doloribus rerum, a amet iusto ipsum quidem eum quos corrupti totam voluptatibus ducimus vel soluta illo nam dolore exercitationem omnis quisquam?</p>
+                    <a href="#" class="btn-4">Leer mas</a>                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer container">
+        <div class="link">
+            <h3>lore</h3>
+            <ul>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+            </ul>
+        </div>
+         <div class="link">
+            <h3>lore</h3>
+            <ul>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+            </ul>
+        </div>
+         <div class="link">
+            <h3>lore</h3>
+            <ul>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+            </ul>
+        </div>
+         <div class="link">
+            <h3>lore</h3>
+            <ul>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
